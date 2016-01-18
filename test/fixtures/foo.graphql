@@ -1,0 +1,7 @@
+Basis {
+  foo,
+  bar,
+  items {
+    bar
+  }
+}
