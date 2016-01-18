@@ -9,7 +9,7 @@ graphql parser for generating abstract syntax tree
 
 ## Why create this project
 
-This is not a real parser for GraphQL standard, this project just take the good form of
+This is not a real parser for GraphQL standard, this project just takes the good form of
 GraphQL and make you and your projects are able to express your configurations in this
 simple way.
 
@@ -27,7 +27,7 @@ var source = fs.readFileSync('../foo.graphql').toString('utf8');
 var ast = graphql.parse(source);
 ```
 
-The graphQL file deos look like the following:
+The GraphQL file does look like the following:
 
 ```
 Basis {
