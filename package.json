@@ -1,0 +1,24 @@
+{
+  "name": "graphsql-parser",
+  "version": "1.0.0",
+  "description": "graphql parser for generating abstract syntax tree",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/weflex/graphql-parser.git"
+  },
+  "keywords": [
+    "graphql",
+    "parser",
+    "ast"
+  ],
+  "author": "Yorkie Liu <yorkiefixer@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weflex/graphql-parser/issues"
+  },
+  "homepage": "https://github.com/weflex/graphql-parser#readme"
+}
