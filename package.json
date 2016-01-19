@@ -1,24 +1,25 @@
 {
-  "name": "graphsql-parser",
+  "name": "graphml-parser",
   "version": "1.1.0",
-  "description": "graphql parser for generating abstract syntax tree",
+  "description": "Graph ML is for Graph Marked Lanuage, which is similar with Facebook's GraphQL, But mostly as a Domain-Specific expression in WeFlex team.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/weflex/graphql-parser.git"
+    "url": "git+ssh://git@github.com/weflex/graphml-parser.git"
   },
   "keywords": [
     "graphql",
+    "graphml",
     "parser",
     "ast"
   ],
   "author": "Yorkie Liu <yorkiefixer@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/weflex/graphql-parser/issues"
+    "url": "https://github.com/weflex/graphml-parser/issues"
   },
-  "homepage": "https://github.com/weflex/graphql-parser#readme"
+  "homepage": "https://github.com/weflex/graphml-parser#readme"
 }
