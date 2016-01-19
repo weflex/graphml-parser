@@ -9,6 +9,12 @@ test('foo', function (t) {
   var source = fs.readFileSync(
     path.join(__dirname, './fixtures/foo.graphml'));
   var ast = parse(source);
-  console.log(ast);
+  t.equal(ast.type, 'Basis');
+  t.deepEqual(ast.root.fields, ['foo', 'bar']);
+  t.deepEqual(ast.root.methods.items.fields, ['bar']);
+  t.deepEqual(ast.root.methods.items.args, {
+    limit: 10,
+    status: 'checkin'
+  });
   t.end();
 });

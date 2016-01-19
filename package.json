@@ -4,7 +4,7 @@
   "description": "Graph ML is for Graph Marked Lanuage, which is similar with Facebook's GraphQL, But mostly as a Domain-Specific expression in WeFlex team.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,9 @@
   },
   "homepage": "https://github.com/weflex/graphml-parser#readme",
   "devDependencies": {
+    "tape": "^4.4.0"
+  },
+  "dependencies": {
     "tape": "^4.4.0"
   }
 }
