@@ -1,6 +1,9 @@
 "use strict";
 
 function parse (src) {
+  if (Buffer.isBuffer(src)) {
+    src += '';
+  }
   var pos = 0;
   var token = '';
   const obj = newObj();
@@ -37,6 +40,8 @@ function parse (src) {
       }
     }
   } while (src[pos++]);
+  // return objects
+  return obj;
 }
 
 function newObj () {
