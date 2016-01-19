@@ -42,7 +42,7 @@ The GraphML file should look like the following:
 Basis {
   foo,
   bar,
-  items {
+  items(limit=10, status=checkin) {
     bar
   }
 }
@@ -62,6 +62,10 @@ Then you will get the following tree:
     "methods": {
       "items": {
         "type": false,
+        "args": {
+          "limit": 10,
+          "status": "checkin"
+        },
         "fields": [
           "bar"
         ]
