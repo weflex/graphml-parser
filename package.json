@@ -1,6 +1,6 @@
 {
   "name": "graphml-parser",
-  "version": "1.3.2",
+  "version": "1.4.0",
   "description": "Graph ML is for Graph Marked Lanuage, which is similar with Facebook's GraphQL, But mostly as a Domain-Specific expression in WeFlex team.",
   "main": "index.js",
   "scripts": {
