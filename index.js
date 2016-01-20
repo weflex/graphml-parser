@@ -3,23 +3,28 @@
 var assert = require('assert');
 
 function parse (src) {
-  if (Buffer.isBuffer(src)) {
+  // check if the runtime is node or browser
+  if (typeof Buffer === 'function' && 
+    Buffer.isBuffer(src)) {
     src += '';
   }
-  var pos = 0;
-  var token = '';
-  var obj = newObj();
-  var ctx = obj;
-  var isParsingArgs = false;
-  var savedToken = null;
-  var savedArgs = null;
+  var pos = 0;          // parsing cursor
+  var token = '';       // record token
+  var obj = newObj();   // the object to be returned
+  var ctx = obj;        // context object
+  var isParsingArgs = false;  // flag if the program is parsing arguments
+  var savedToken = null;      // when parsing arguments, we need to record last token here
+  var savedArgs = null;       // when having arguments parsing done, we need to save parsed 
+                              // arguments and use it in next `{`
 
   do {
     var ch = src[pos];
 
     // check if the program is parsing arguments ()
     if (isParsingArgs === true) {
+      // enter parsing arguments mode on `(`
       if (ch === ')') {
+        // parse the arguments string
         savedArgs = token.split(',').reduce(function (val, item) {
           var obj = item.split('=');
           // convert the string to number
